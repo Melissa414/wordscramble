@@ -1,16 +1,16 @@
-.grid {
-  display: flex;                       /* establish flex container */
-  flex-wrap: wrap;                     /* enable flex items to wrap */
-  justify-content: space-around;
-  text-align: center;
 
+p{
+  text-align: center;
 }
-.cell {
-  flex: 0 0 32%;                       /* don't grow, don't shrink, width */
-  height: 50px;
-  margin-bottom: 5px;
-  background-color: #999;
+button {
+  background-color: white;
+  color: black;
+  padding: 75px;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  margin:10px;
 }
-/*.cell:nth-child(3n) {
-  background-color: #F00;
-}*/
+.grid{
+  margin-left:100px;
+}

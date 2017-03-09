@@ -5,11 +5,11 @@ var score = 0;
 
 
   $("button").mouseover(function() {
-    var x = Math.floor((Math.random() * 500) + 1);
+    var x = Math.floor((Math.random() * 9) + 1);
       $(this).append(x).off();
 
   $("button").on("click", function(){
-      if(x % 9 == 0){
+      if(x + x + x === 9){
         document.getElementById("score").innerHTML= "Score: " + score; 
         score ++;
       }
@@ -17,6 +17,7 @@ var score = 0;
         // score --;
       }
     });
+
   });
 };
 
