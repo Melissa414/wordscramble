@@ -1,16 +1,22 @@
-$( document ).ready(function(){
+window.onload = function(){
 
-var numbers = ["9 ", "18 ", "36 ", "48 ", "54 ", "63 ", "72 ", "81 "];
+var numbers = "";
 var score = 0;
 
 
-for (var i = 0; i < numbers.length; i++) {
-// var number = Math.floor(Math.random() * 9);
-    $("button").on("click", function() {
-        if (numbers % 9) {
-            score ++;
-        };
+  $("button").mouseover(function() {
+    var x = Math.floor((Math.random() * 500) + 1);
+      $(this).append(x).off();
+
+  $("button").on("click", function(){
+      if(x % 9 == 0){
+        document.getElementById("score").innerHTML= "Score: " + score; 
+        score ++;
+      }
+      else{
+        // score --;
+      }
     });
-    // $("button").append(numbers);
-}
-});
+  });
+};
+
